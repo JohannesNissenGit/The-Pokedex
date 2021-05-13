@@ -3,14 +3,29 @@
 body {
     margin: 0;
     background-color: rgba(44, 41, 40, 255) !important;
+    position: relative;
 }
 
 .d-none {
     display: none !important;
 }
 
+.d-flex {
+    display: flex;
+}
+
+.z10 {
+    z-index: 10 !important;
+}
+
 .zminus100 {
     z-index: -100 !important;
+}
+
+/*navbar*/
+
+.navbarImg {
+    margin-right: 10px;
 }
 
 /*loading screen*/
@@ -32,15 +47,18 @@ body {
 /*Pokemon list*/
 
 #pokemonListContainer {
+    margin-top: 70px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .pokelistDetailsContainer {
     margin: 5px;
     width: 150px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    height: 180px;
+    padding-top: 3px;
+    padding-bottom: 2px;
     /*border: 3px solid black ;*/
     border-radius: 10px;
     cursor: pointer;
@@ -66,6 +84,41 @@ body {
 .blue {
     background-color: rgba(80, 176, 216, 255);
 }
+
+
+/*foreground details of one pokedex entry
+*/
+.pokedexEntryContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:rgba(255, 255, 255, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.pokedexEntry {
+width: 300px;
+height: 550px;
+background-color: black;
+border-radius: 20px;
+z-index: 11;
+display: flex;
+flex-direction: column;
+align-items: center;
+color: white;
+}
+
+.pokedexEntry img{
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+    }
 
 #pokedex {
     min-height: 50vh;

@@ -22,6 +22,45 @@
 
 <body onload="loadAllPokemon()">
 
+<!--navbar-->
+<!--<nav class="navbar navbar-dark bg-dark fixed-top">-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand navbarImg" href="#"><img src="./img/paw-128.png" alt="" width="26" height="26" class="d-inline-block align-text-top navbarImg">Pokédex</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <!--<li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li>-->
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
     <!--loading screen-->
     <div id="loadingContainer">
         <div class="spinner-border text-light" role="status">
@@ -29,11 +68,27 @@
           </div>
         <div id="loadingStatusCount"></div></div>
 
+  <!--pokemon details-->
+  <div class="pokedexEntryContainer zminus100 d-none" id="pokedexEntryContainer" onclick="CloseCurrentPokemon()">
+
+<div class="pokedexEntry" id="pokedexEntry">
+    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png" alt="">
+    <h1>NAMENAME</h1>
+    <div> <p> type1 type2 type3 </p></div>
+    <div class="d-flex">
+        <div>232332m <br>height</div>
+        <div>893943kg <br>weight</div>
+    </div>
+    <h2>Base Stats</h2>
+    <div class="d-flex">HP <div>ssssssssssssssssssssssssssssssssssssssssss</div></div>
+    <div class="d-flex">ATK <div>ssssssssssssssssssssssssssssssssssssssssss</div></div>
+    <div class="d-flex">DEF <div>ssssssssssssssssssssssssssssssssssssssssss</div></div>
+    <div class="d-flex">SPD <div>ssssssssssssssssssssssssssssssssssssssssss</div></div>
+</div>
+</div>
+
  <!--pokemon list-->
-<div id="pokemonListContainer">
-
-
-    
+<div id="pokemonListContainer">   
 </div>
 
 
