@@ -1,0 +1,75 @@
+/*general*/
+
+body {
+    margin: 0;
+    background-color: rgba(44, 41, 40, 255) !important;
+}
+
+.d-none {
+    display: none !important;
+}
+
+.zminus100 {
+    z-index: -100 !important;
+}
+
+/*loading screen*/
+
+#loadingContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(248,160,96,255);
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/*Pokemon list*/
+
+#pokemonListContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pokelistDetailsContainer {
+    margin: 5px;
+    width: 150px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /*border: 3px solid black ;*/
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.pokelistTopDetails {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*colors according to pokemontype*/
+
+.green {
+    background-color: rgba(104, 168, 144, 255);
+}
+
+.red {
+    background-color: rgba(215, 112, 95, 255);
+}
+
+.blue {
+    background-color: rgba(80, 176, 216, 255);
+}
+
+#pokedex {
+    min-height: 50vh;
+    width: 100vw;
+    background-color: rgb(158, 15, 15);
+    color: white;
+}
