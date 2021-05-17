@@ -127,10 +127,19 @@ function BuildPokemonDetails(name, id, img) {
 }
 
 function BuildcurrentPokemon(name, id, img, height, weight, types, hp, atk, def, spd) {
+    
 document.getElementById('pokedexEntry').innerHTML = `
     <img src="${img}" alt="">
-    <h1>${name}</h1>
-    <div> <p> type1 type2 type3 </p></div>
+    <h1>${name}</h1> <div>`;
+    
+    for (let j=0; j<types.length; j++) {
+        let pokemontype = types[j]['type']['name'];
+        document.getElementById('pokedexEntry').innerHTML += `
+        <div> ${pokemontype} </div>`
+    }
+
+    document.getElementById('pokedexEntry').innerHTML += `
+    </div>
     <div class="d-flex">
         <div>${height} <br>height</div>
         <div>${weight} <br>weight</div>
